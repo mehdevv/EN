@@ -1,0 +1,125 @@
+.transaction-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--surface);
+    border: none;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-align: left;
+    width: 100%;
+    margin-bottom: var(--spacing-sm);
+    box-shadow: var(--shadow-sm);
+}
+
+.transaction-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+}
+
+.transaction-item:active {
+    transform: translateX(2px) scale(0.98);
+}
+
+.transaction-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+}
+
+.transaction-icon .material-symbols-outlined {
+    font-size: 22px;
+    color: var(--text-on-primary);
+}
+
+/* Transaction Icon Colors */
+.transaction-icon.primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.transaction-icon.blue {
+    background: linear-gradient(135deg, #007AFF 0%, #0051D5 100%);
+}
+
+.transaction-icon.purple {
+    background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+}
+
+.transaction-icon.orange {
+    background: linear-gradient(135deg, #FF9500 0%, #FF6B00 100%);
+}
+
+.transaction-icon.yellow {
+    background: linear-gradient(135deg, #FFB800 0%, #FF9500 100%);
+}
+
+.transaction-icon.red {
+    background: linear-gradient(135deg, #FF3B30 0%, #D70015 100%);
+}
+
+.transaction-icon.green {
+    background: linear-gradient(135deg, #00A651 0%, #008C44 100%);
+}
+
+.transaction-icon.pink {
+    background: linear-gradient(135deg, #FF2D55 0%, #D70040 100%);
+}
+
+.transaction-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.transaction-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-semibold);
+    color: var(--text-primary);
+    margin: 0 0 var(--spacing-xs) 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.transaction-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.transaction-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-xs);
+    flex-shrink: 0;
+}
+
+.transaction-amount {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-bold);
+    margin: 0;
+}
+
+.transaction-amount.positive {
+    color: var(--success);
+}
+
+.transaction-amount.negative {
+    color: var(--error);
+}
+
+.transaction-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--success);
+    border-radius: 50%;
+}

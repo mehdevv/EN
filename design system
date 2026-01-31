@@ -1,0 +1,276 @@
+📐 MobiSpace – UI/UX DESIGN RULE SHEET
+
+(Design System for Google Stitch)
+
+1️⃣ DESIGN PHILOSOPHY
+
+MobiSpace is:
+
+Clean
+
+Trustworthy
+
+Mass-market friendly
+
+Fintech + Telecom hybrid
+
+Core principle:
+
+“If it needs explanation, it’s too complex.”
+
+2️⃣ BRAND RULES (NON-NEGOTIABLE)
+Colors
+
+Primary: Mobilis Green
+
+Secondary / Accent: Mobilis Gold
+
+Background: White or very light gray
+
+Error: Soft red
+
+Success: Green (same family as primary)
+
+🚫 Never use:
+
+Vodafone red
+
+Dark backgrounds as default
+
+Neon or flashy colors
+
+3️⃣ TYPOGRAPHY SYSTEM
+Font Style
+
+Modern sans-serif
+
+Human, rounded, readable
+
+Arabic & French compatible
+
+Font Sizes (Hierarchy)
+
+Title / Screen header: Large, bold
+
+Section title: Medium, semi-bold
+
+Body text: Regular
+
+Secondary text: Smaller, gray
+
+Numbers / balances: Bold, high contrast
+
+📌 Numbers (DA, GB, minutes) must always stand out.
+
+4️⃣ SPACING & GRID
+Layout Rules
+
+Use 8pt spacing system
+
+Consistent margins on all screens
+
+No overcrowding
+
+Card Layout
+
+Rounded corners
+
+Soft shadow
+
+White background
+
+Clear internal padding
+
+White space is a feature, not empty space.
+
+5️⃣ COMPONENT RULES
+Buttons
+
+Primary CTA: Solid Mobilis green
+
+Secondary CTA: Outline or soft background
+
+Rounded corners
+
+Clear label (verb + action)
+
+Examples:
+
+“Recharge”
+
+“Send Money”
+
+“Generate Card”
+
+Icons
+
+Simple, outline or soft-filled
+
+Consistent stroke weight
+
+Always paired with a label
+
+🚫 No decorative icons without meaning.
+
+Cards
+
+One main idea per card
+
+Clear title
+
+Optional action
+
+No more than 3 elements inside
+
+6️⃣ NAVIGATION RULES
+Bottom Navigation
+
+Fixed, always visible
+
+5 tabs max
+
+Icon + label
+
+Active tab highlighted in Mobilis green
+
+Screen Headers
+
+Back arrow on the left
+
+Title centered
+
+No clutter
+
+7️⃣ SIM vs WALLET VISUAL DISTINCTION
+SIM SERVICES
+
+Informational
+
+Usage-focused
+
+Telecom icons (calls, data, SMS)
+
+WALLET
+
+Fintech tone
+
+Money-first layout
+
+Security cues (lock icons, confirmations)
+
+📌 Same design language, different intent.
+
+8️⃣ FINANCIAL UX & SECURITY RULES (CRITICAL)
+
+Every money action requires:
+
+Confirmation
+
+PIN or biometric
+
+Sensitive info:
+
+Hidden by default
+
+Revealed only on user action
+
+Show warnings in calm language
+
+Never auto-spend user money
+
+9️⃣ INPUT & FORM RULES
+
+Numeric keypad for amounts
+
+Real-time validation
+
+Clear error messages
+
+No technical jargon
+
+Good example:
+
+“Insufficient balance”
+
+Bad example:
+
+“Transaction error 403”
+
+🔟 FEEDBACK & STATES
+Loading
+
+Skeleton loaders
+
+Never blank screens
+
+Success
+
+Green checkmark
+
+Short confirmation text
+
+Error
+
+Clear explanation
+
+Actionable next step
+
+1️⃣1️⃣ ACCESSIBILITY
+
+High contrast text
+
+Large tap areas
+
+Simple language
+
+Icons always supported by text
+
+1️⃣2️⃣ LANGUAGE & LOCALIZATION
+
+Arabic & French support
+
+No mixed language in one sentence
+
+Currency always in DA
+
+Dates in local format
+
+1️⃣3️⃣ DATA VISUALIZATION
+
+Simple bar charts
+
+No complex graphs
+
+Weekly/monthly views only
+
+Clear legends
+
+1️⃣4️⃣ ANIMATION & MOTION
+
+Subtle transitions
+
+No unnecessary animations
+
+Motion should guide attention, not distract
+
+1️⃣5️⃣ WHAT TO AVOID
+
+🚫 Overloaded screens
+🚫 Too many CTAs
+🚫 Hidden actions
+🚫 Aggressive colors
+🚫 Financial info on SIM screens
+
+1️⃣6️⃣ SUCCESS CRITERIA
+
+A screen is correct if:
+
+A non-tech user understands it in 3 seconds
+
+Main action is obvious
+
+Screen can be explained in one sentence
+
+🧠 FINAL RULE
+
+Design for trust first, speed second, beauty third.

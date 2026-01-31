@@ -1,0 +1,401 @@
+.transfer-credit {
+    min-height: 100vh;
+    background-color: var(--background);
+    padding-bottom: 80px;
+}
+
+/* ===== HEADER ===== */
+.transfer-header {
+    background: linear-gradient(180deg, #009640 0%, #007a33 100%);
+    border-radius: 0 0 24px 24px;
+    padding: 16px 24px 24px;
+    box-shadow: 0 2px 12px rgba(0, 166, 81, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-back {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.header-back:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.header-back .material-symbols-outlined {
+    font-size: 24px;
+}
+
+.header-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.header-spacer {
+    width: 40px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.transfer-main {
+    padding: 24px 16px;
+}
+
+/* ===== BALANCE ===== */
+.current-balance {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.balance-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.balance-amount {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary);
+    margin: 8px 0;
+}
+
+.balance-note {
+    font-size: 11px;
+    color: var(--accent);
+}
+
+/* ===== TRANSFER FORM ===== */
+.transfer-form {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--background);
+    border-radius: 12px;
+    padding: 12px 16px;
+    border: 2px solid transparent;
+    transition: all var(--transition-base);
+}
+
+.input-with-icon:focus-within {
+    border-color: var(--primary);
+    background: white;
+}
+
+.input-with-icon .material-symbols-outlined {
+    font-size: 20px;
+    color: var(--text-secondary);
+    margin-right: 12px;
+}
+
+.form-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: var(--text-primary);
+    outline: none;
+}
+
+.form-input.large {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.input-action {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.input-action:hover {
+    transform: scale(1.05);
+}
+
+.input-action .material-symbols-outlined {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* ===== QUICK AMOUNTS ===== */
+.quick-amounts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.quick-amount-btn {
+    padding: 12px;
+    background: var(--background);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.quick-amount-btn:hover {
+    border-color: var(--primary);
+    background: rgba(0, 166, 81, 0.05);
+    color: var(--primary);
+}
+
+/* ===== TRANSFER BUTTON ===== */
+.transfer-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+    background: var(--primary);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.transfer-btn:hover:not(:disabled) {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 166, 81, 0.3);
+}
+
+.transfer-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.transfer-btn .material-symbols-outlined {
+    font-size: 20px;
+}
+
+/* ===== RECENT TRANSFERS ===== */
+.recent-section {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 16px 0;
+}
+
+.transfer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.transfer-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: var(--background);
+    border-radius: 12px;
+    transition: all var(--transition-base);
+}
+
+.transfer-item:hover {
+    background: rgba(0, 166, 81, 0.05);
+}
+
+.transfer-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(239, 68, 68, 0.1);
+    border-radius: 10px;
+}
+
+.transfer-icon .material-symbols-outlined {
+    font-size: 20px;
+    color: #ef4444;
+}
+
+.transfer-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.transfer-number {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.transfer-date {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.transfer-amount {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ef4444;
+}
+
+/* ===== MODAL ===== */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    margin: 0 16px;
+    width: 100%;
+    max-width: 400px;
+    animation: slideUp 0.3s;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 8px 0;
+}
+
+.modal-description {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 0 0 24px 0;
+}
+
+.pin-input-group {
+    margin-bottom: 24px;
+}
+
+.pin-input {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 8px;
+    font-weight: 700;
+}
+
+.modal-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.modal-btn {
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    border: none;
+}
+
+.modal-btn.cancel {
+    background: var(--background);
+    color: var(--text-primary);
+}
+
+.modal-btn.confirm {
+    background: var(--primary);
+    color: white;
+}
+
+.modal-btn.confirm:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.modal-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}

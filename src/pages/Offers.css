@@ -1,0 +1,200 @@
+.offers {
+    min-height: 100vh;
+    background-color: transparent;
+    padding-bottom: 80px;
+}
+
+.offers-content {
+    padding: var(--spacing-lg);
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== CATEGORIES ===== */
+.categories-section {
+    margin-bottom: var(--spacing-lg);
+    margin-left: calc(var(--spacing-lg) * -1);
+    margin-right: calc(var(--spacing-lg) * -1);
+    padding: 0 var(--spacing-lg);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.categories-scroll {
+    display: flex;
+    gap: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+}
+
+.category-chip {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--surface);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-semibold);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.category-chip .material-symbols-outlined {
+    font-size: 18px;
+}
+
+.category-chip:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--glass-bg-light);
+}
+
+.category-chip.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--text-on-primary);
+    box-shadow: 0 4px 12px rgba(0, 166, 81, 0.3);
+}
+
+.category-chip.active .material-symbols-outlined {
+    color: var(--text-on-primary);
+}
+
+/* ===== OFFERS COUNT ===== */
+.offers-count {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-semibold);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.offers-count .material-symbols-outlined {
+    font-size: 18px;
+    color: var(--primary);
+}
+
+/* ===== OFFERS GRID ===== */
+.offers-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.offer-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--surface);
+    border: none;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-align: left;
+    box-shadow: var(--shadow-sm);
+}
+
+.offer-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+}
+
+.offer-card:active {
+    transform: translateX(2px) scale(0.98);
+}
+
+.offer-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+}
+
+.offer-icon .material-symbols-outlined {
+    font-size: 24px;
+    color: var(--text-on-primary);
+}
+
+/* Offer Icon Colors */
+.offer-icon.green {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.offer-icon.blue {
+    background: linear-gradient(135deg, #007AFF 0%, #0051D5 100%);
+}
+
+.offer-icon.purple {
+    background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+}
+
+.offer-icon.orange {
+    background: linear-gradient(135deg, #FF9500 0%, #FF6B00 100%);
+}
+
+.offer-icon.yellow {
+    background: linear-gradient(135deg, #FFB800 0%, #FF9500 100%);
+}
+
+.offer-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.offer-name {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-semibold);
+    color: var(--text-primary);
+    margin: 0 0 4px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.offer-price {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-bold);
+    color: var(--primary);
+    margin: 0;
+}
+
+.offer-arrow {
+    font-size: 20px;
+    color: var(--text-tertiary);
+    flex-shrink: 0;
+}
+
+/* ===== NO OFFERS ===== */
+.no-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-4xl) var(--spacing-lg);
+    text-align: center;
+}
+
+.no-offers .material-symbols-outlined {
+    font-size: 64px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.no-offers p {
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
+    margin: 0;
+}
